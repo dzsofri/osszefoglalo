@@ -7,42 +7,81 @@
     * {
       box-sizing: border-box;
     }
-    
+  
+  article{
+    -webkit-animation: hatter 30s ease infinite;
+      animation: hatter 30s ease infinite;
+  }
+  @-webkit-keyframes hatter {
+      0%{background-position:44% 0%}
+      50%{background-position:57% 100%}
+      100%{background-position:44% 0%}
+  }
+  @keyframes hatter {
+      0%{background-position:44% 0%}
+      50%{background-position:57% 100%}
+      100%{background-position:44% 0%}
+  }
     body {
       display: flex;
       flex-direction: column;
-      height: 100vh;
-      width: 100vw;
+      height: auto;
+      width: 100%;
       margin: 0;
+      background: linear-gradient(-45deg, #ffd8ef, #ffb9d4, rgb(203, 177, 252), #ffffff);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
     h1{
           text-align: center;
           font-family: 'Inter', sans-serif;
-          font-size: 300%;
-          color: white;
+          font-size: 4vw;
+          color: rgb(167, 167, 167);
+          text-shadow: 4px 3px 0px #7A7A7A;
       }
     header {
-      background: #FFC4D0;
+      background: #fff;
       height: 15vh;
-      
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
     main {
       display: flex;
       height: 100%;
+      width: 100%;
     }
     
     
     article {
       flex: 4;
-      background: #fff;
+      display: flex;
+     
     }
     
     
     footer {
-      background: #FFC4D0;
+      background: #fff;
       height: 10vh;
-    }
+      width:100%;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
     
     header,
     footer,
@@ -50,4 +89,182 @@
       padding: 1em;
     }
     
-   
+    .base{
+      display: flex;
+      justify-content: center;
+       align-content: center;
+    
+  
+      }
+    .base img{
+      display: flex;
+      width: auto;
+      height: 20vw;
+      margin: 100% 0% 50%;
+      margin-left: 375%;
+    
+    }
+
+    .szemcsi img{
+      position: absolute;
+      opacity: 1;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 5vw;
+      animation-fill-mode: forwards;
+    }
+
+    .szemcsi p{
+      position: absolute;
+      opacity: 1;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 5vw;
+      animation-fill-mode: forwards;
+      font-size: 5vw;
+      padding-top: 10vw;
+      margin-right: 10vw;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      color: rgb(255, 255, 255);
+      text-shadow: 4px 3px 0px #7A7A7A;
+      
+    }
+    
+    .szemcsi{
+      position: absolute;
+      margin-top: 25%;
+      margin-left: 40%;
+    }
+    
+
+    .kaja img{
+      position: absolute;
+      opacity: 0;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 8vw;
+      animation-fill-mode: forwards;
+      animation-delay: 5s;
+    }
+    .kaja p{
+      position: absolute;
+      opacity: 0;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 5vw;
+      animation-fill-mode: forwards;
+      font-size: 5vw;
+      padding-top: 5vw;
+      margin-right: 10vw;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      color: rgb(255, 255, 255);
+      text-shadow: 4px 3px 0px #7A7A7A;
+      animation-delay: 5s;
+    }
+    .kaja{
+      position: absolute;
+      margin-top: 30%;
+      margin-left: 40%;
+    }  
+
+    .laptop img{
+      position: absolute;
+      opacity: 0;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 8vw;
+      animation-fill-mode: forwards;
+      animation-delay: 10s;
+    }
+    .laptop p{
+      position: absolute;
+      opacity: 0;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 5vw;
+      animation-fill-mode: forwards;
+      font-size: 5vw;
+      padding-top: 5vw;
+      margin-right: 10vw;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      color: rgb(255, 255, 255);
+      text-shadow: 4px 3px 0px #7A7A7A;
+      animation-delay: 10s;
+    }
+  
+    .laptop{
+      position: absolute;
+      margin-top: 30%;
+      margin-left: 35%;
+    }
+
+    .kenyer img{
+      position: absolute;
+      opacity: 0;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 10vw;
+      animation-fill-mode: forwards;
+      animation-delay: 15s;
+    }
+    .kenyer p{
+      position: absolute;
+      opacity: 0;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 5vw;
+      animation-fill-mode: forwards;
+      font-size: 5vw;
+      padding-top: 10vw;
+      margin-right: 10vw;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      color: rgb(255, 255, 255);
+      text-shadow: 4px 3px 0px #7A7A7A;
+      animation-delay: 15s;
+    }
+  
+    .kenyer{
+      position: absolute;
+      margin-top: 23%;
+      margin-left: 36.6%;
+    }
+
+    @keyframes fadeOpacity {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
