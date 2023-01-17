@@ -2,6 +2,13 @@
     FBE8E7
     F7DDDE
     FFC4D0 */
+    .base img{
+      display: flex;
+      width: auto;
+      height: 20vw;
+      margin: 100% 0% 50%;
+      margin-left: 375%;
+    }
 
   
     * {
@@ -96,15 +103,7 @@
     
   
       }
-    .base img{
-      display: flex;
-      width: auto;
-      height: 20vw;
-      margin: 100% 0% 50%;
-      margin-left: 375%;
     
-    }
-
     .szemcsi img{
       position: absolute;
       opacity: 1;
@@ -257,6 +256,44 @@
       margin-left: 36.6%;
     }
 
+    .fagyi img{
+      position: absolute;
+      opacity: 0;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 8vw;
+      animation-fill-mode: forwards;
+      animation-delay: 20s;
+    }
+
+    .fagyi p{
+      position: absolute;
+      opacity: 0;
+      animation-name: fadeOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 5s;
+      width: auto;
+      height: 5vw;
+      animation-fill-mode: forwards;
+      font-size: 5vw;
+      padding-top: 5vw;
+      margin-right: 10vw;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      color: rgb(255, 255, 255);
+      text-shadow: 4px 3px 0px #7A7A7A;
+      animation-delay: 20s;
+    }
+    .fagyi{
+      position: absolute;
+      margin-top: 30%;
+      margin-left: 40%;
+    } 
+
     @keyframes fadeOpacity {
       0% {
         opacity: 0;
@@ -268,3 +305,14 @@
         opacity: 0;
       }
     }
+    
+    @keyframes fadeoutOpacity {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+   
